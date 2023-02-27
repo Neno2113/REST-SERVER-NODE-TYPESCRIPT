@@ -1,13 +1,12 @@
 import dotenv from 'dotenv';
-import dbConnection from './db/connection';
-import Server from './models/server';
+import Server from './src/server/server';
 
 dotenv.config();
 
 
 const server = new Server();
 
-dbConnection();
+// dbConnection();
 
 
 server.listen();
